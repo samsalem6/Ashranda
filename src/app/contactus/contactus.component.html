@@ -1,0 +1,89 @@
+<div class="blog-banner">
+    <div class="blog-slide">
+        <img 
+        src="assets/slide3.jpg"
+        alt="">
+    </div>
+    <div class="banner-content">
+        <div class="banner-container container">
+            <div class="banner-text">
+                <h1> 
+                    <strong>Contact Us</strong>
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact">
+    <div class="container">
+        <div class="contact-body">
+            <div class="row">
+                <div class="col-lg-8 col-md-7">
+                    <form >
+                        <div class="contact-form">
+                            <h6>Fill the form below</h6>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>  First Name</label>
+                                        <input type="text" placeholder="Enter Name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input value="" type="text" placeholder="Enter Last Name" class="form-control" id="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" placeholder="Enter Email" class="form-control" id="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Phone</label>
+                                        <input type="tel" placeholder="Enter Phone Number" class="form-control" id="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label></label>
+                                        <textarea class="form-control" id="form-control" rows="3" placeholder="Write your message" style="height: 108px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="submit" (click)="submit()">Send</button>
+                            <div class="alert alert-success" role="alert" id="green">
+                                Your message have be sended<span (click)="close()">x</span>
+                              </div>
+                              <div class="alert alert-danger" role="alert" id="red">
+                                Something is missing alert—check it out!<span (click)="close()">x</span>
+                              </div>
+                        </div>
+                       
+                    </form>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="address">
+                        <img src="assets/ashranda-logo.png" alt="" style="width: 300px; height: 80px;">
+                        <h5>Address</h5>
+                        <div>
+                            <p>
+                                West Bank - Luxor City - Egypt
+                            </p>
+                        </div>
+                        <div class="line"></div>
+                        <h5>Email address</h5>
+                        <div>
+                            <p>reservations@ashranda.com</p>
+                            <p>info.23@gmail.com</p>
+                            <p>Mobile: 002-01123940493</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

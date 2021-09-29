@@ -1,0 +1,43 @@
+<tabset [justified]="true">
+    <tab  *ngFor="let stp of cruises$?.items.slice(1)" heading="{{stp.title}}">
+        <div class="container">
+            <div class="row">
+                
+                    <div class="show-gallery" *ngFor="let img of stp.galleries">
+                      <a href="{{img.image}}" data-lightbox="roadtrip" data-title="My caption">
+                        <img id="image" src="{{img.image}}" alt="">
+                      </a>
+
+
+                    </div>
+                </div>
+            </div>
+            
+         
+            <!-- <div class="gallery-wrapper">
+
+                <div class="image-wrapper" *ngFor="let img of stp.galleries">
+                  <a href="#lightbox-image-1">
+                    <img src="{{img.image}}" alt="" />
+                  </a>
+                </div>
+           </div>
+
+              <div class="gallery-lightboxes">
+
+                <div class="image-lightbox" id="lightbox-image-1"  *ngFor="let img of stp.galleries">
+                  <div class="image-lightbox-wrapper">
+                    <a href="#" class="close"></a>
+                    <a href="#lightbox-image-3" class="arrow-left"></a>
+                    <a href="#lightbox-image-2" class="arrow-right"></a>
+                    <img src="{{img.image}}" alt="" />
+                    <div class="image-title"></div>
+                  </div>
+                </div>
+             </div>
+-->
+        
+    
+    </tab>
+    
+  </tabset>

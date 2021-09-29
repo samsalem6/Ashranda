@@ -1,0 +1,42 @@
+<div class="blog-banner">
+    <div class="blog-slide">
+        <img 
+        src="assets/slide3.jpg"
+        alt="">
+    </div>
+    <div class="banner-content">
+        <div class="banner-container container">
+            <div class="banner-text">
+                <h1>Discover more with our 
+                    <strong >  Nile Cruises.</strong>
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="highlight-section">
+    <div class="container">
+        <div class="text-section">
+            <h2> Nothing more beautiful than spending your vacation, on the quiet Blue Nile. </h2>
+            <h4> 
+                The River Nile remains the lifeblood of the Egyptians centuries ago, where water, air, purity and the magic of its picturesque scenery nature, when you sit on the banks of the Nile, You lay off in another world, on a magical journey that takes you to between the two southern witches Luxor and Aswan. 
+            </h4>
+        </div>
+    </div>
+</div>
+
+<div class="cruises-section" >
+    <div class="row mr-0">
+        <div class="col-md-6" *ngFor="let c of crusises;" [routerLink]="['/cruisesDt/'+c.slug]">
+            <div class="company-image">
+                <img src="{{c.image}}" alt="">
+                <div class="image-overlay">
+                    <div class="overlay-text text-center">
+                        <h3>{{c.title}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
